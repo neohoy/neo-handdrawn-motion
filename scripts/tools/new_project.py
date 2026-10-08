@@ -54,7 +54,7 @@ if not os.path.exists(cfg_path):
         "scenes": [],
     }
     json.dump(cfg, open(cfg_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-shim = ('"""Puts the handdrawn-lyric-mv kit and this project\'s own drawings (scripts/assets) on sys.path."""\n'
+shim = ('"""Puts the neo-lyric-mv kit and this project\'s own drawings (scripts/assets) on sys.path."""\n'
         f'import os\nimport sys\nsys.path.insert(0, {KIT!r})\n'
         'sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets"))\n')
 for d in ("scenes", "assets"):
