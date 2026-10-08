@@ -1,6 +1,6 @@
-# neo-lyric-mv · NEO 歌词 MV
+# neo-handdrawn-motion · NEO 手绘动画
 
-把一首中文歌做成逐帧手绘的歌词 MV，可以做整首，也可以只做高潮片段；简体、繁体都能出。
+逐帧手绘画风的动画技能。目前用来把一首中文歌做成手绘歌词 MV，可以做整首，也可以只做高潮片段；简体、繁体都能出。
 
 - **歌词永远是同一套多彩拼贴打字。** 每一句按唱的节奏逐字打出，写在纸标签、黑缎带、竖排招牌、红对联、黑板菜单、路牌、印章或夜空里；副歌的钩子用大字砸下来。
 - **画面每首歌按歌词重新画。** 先读歌词，定这首歌的主角、道具、地点和反复出现的母题，一件件画成素材表给你确认，再拼成镜头。
@@ -19,20 +19,20 @@
 装到当前项目：
 
 ```bash
-npx skills add neohoy/neo-lyric-mv
+npx skills add neohoy/neo-handdrawn-motion
 ```
 
 装到全局，并指定给 Claude Code 或 Codex：
 
 ```bash
-npx skills add neohoy/neo-lyric-mv -g -a claude-code
-npx skills add neohoy/neo-lyric-mv -g -a codex
+npx skills add neohoy/neo-handdrawn-motion -g -a claude-code
+npx skills add neohoy/neo-handdrawn-motion -g -a codex
 ```
 
 也可以手动克隆到技能目录：
 
 ```bash
-git clone https://github.com/neohoy/neo-lyric-mv ~/.claude/skills/neo-lyric-mv
+git clone https://github.com/neohoy/neo-handdrawn-motion ~/.claude/skills/neo-handdrawn-motion
 ```
 
 ### 依赖
@@ -53,7 +53,7 @@ git clone https://github.com/neohoy/neo-lyric-mv ~/.claude/skills/neo-lyric-mv
 准备两样东西：一首歌，一份带时间的歌词（最好是 LRC）。然后对 agent 说：
 
 ```text
-用 neo-lyric-mv 把这首歌做成手绘歌词 MV，横屏，做整首。歌曲在 [歌曲路径]，歌词在 [LRC 路径]。先读歌词，把意象表、素材表和分镜给我看，先不要画镜头。
+用 neo-handdrawn-motion 把这首歌做成手绘歌词 MV，横屏，做整首。歌曲在 [歌曲路径]，歌词在 [LRC 路径]。先读歌词，把意象表、素材表和分镜给我看，先不要画镜头。
 ```
 
 它会在三个地方停下来等你确认：
